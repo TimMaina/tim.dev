@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+section {
+  background-color: white;
+}
+.hero {
+  background-color: #1c1d25;
+  height: 100vh;
+  color: white;
+  font-size: 25px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 80px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+li {
+  text-decoration: none;
+}
+h1 {
+  font-size: 60px;
+  margin: 0;
+}
+h2 {
+  font-size: 40px;
+}
+p {
+  margin: 0;
+  font-weight: 100;
+}
+.subtext {
+  font-size: 15px;
+  font-weight: 300;
+}
+.hero-area {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  margin-left: 70px;
+  margin-bottom: 100px;
+}
+.button {
+  width: 150px;
+  height: 40px;
+  background-color: coral;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+.button:hover {
+  background-color: #ef744b;
+}
+.button:active {
+  background-color: #a9a9a9;
+  color: #808080;
+}
+.socials {
+  padding-bottom: 80px;
+}
+#logo {
+  height: 100px;
+  margin: 10px;
+}
+.social {
+  margin: 20px;
+}
+.sub-section {
+  display: flex;
+  padding: 80px;
+  justify-content: space-around;
+}
+.sub-section-alternative {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+.headshot {
+  width: 250px;
+  border-radius: 125px;
+}
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+.project-card {
+  width: 300px;
+  height: 400px;
+  box-shadow: 5px 5px 20px gray;
+  margin: 10px;
+}
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.project-image {
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 125px;
+}
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.project-link {
+  text-decoration: none;
+  color: #ef744b;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.hamburger {
+  border: 0;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+.hamburger:focus {
+  outline: 0;
+}
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
+  }
+  ul {
+    display: none;
+    background-color: #303241;
+    margin: 0px;
+    padding: 10px;
+  }
+  ul.show {
+    display: block;
+  }
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #303241;
+    overflow-x: hidden;
+  }
+  #logo {
+    display: none;
+  }
+  .headshot {
+    width: 200px;
+    border-radius: 100px;
+  }
+}
